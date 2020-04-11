@@ -9,7 +9,7 @@ def main():
     print("after getting data")
 
 def set_connection():
-    auth = JWTAuth.from_settings_file('C:\\Users\\gwilliams\\Desktop\\Python Experiments\\work projects\\Boxing Clever\\Boxing Clever\\config_info\\keys_config.json')
+    auth = JWTAuth.from_settings_file('C:\\Users\\gwilliams\\Desktop\\Python Experiments\\work projects\\Working_with_Box\\Working_with_Box\\config_info\\keys_config.json')
     
     client = Client(auth)
     
