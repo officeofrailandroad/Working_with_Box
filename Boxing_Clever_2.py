@@ -26,11 +26,11 @@ def get_data(client):
 
     items = root_folder.get_items()
 
-    #for item in items:
-    #    print(f"{item.type.capitalize()} {item.id} is named {item.name}")
-    #    with open (item.name, 'wb') as open_file:
-    #        client.file(item.id).download_to(open_file)
-    #        open_file.close()
+    for item in items:
+        print(f"{item.type.capitalize()} {item.id} is named {item.name}")
+        with open (item.name, 'wb') as open_file:
+            client.file(item.id).download_to(open_file)
+            open_file.close()
 
 
 if __name__ == "__main__":
